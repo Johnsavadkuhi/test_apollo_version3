@@ -38,9 +38,7 @@ type Query {
 const resolvers = {
   
     Query:{
-        books:(_, args )=>{
-            return books 
-        }
+        books:()=>books 
     }
 }
 const server = new ApolloServer({ typeDefs, resolvers })
@@ -53,9 +51,7 @@ const server = new ApolloServer({ typeDefs, resolvers })
     }
     start() 
 
-    const Author = {
-        name:"mohammad"
-    }
+ 
 
     const books = {
         name:"math", 
